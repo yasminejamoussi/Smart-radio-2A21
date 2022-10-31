@@ -67,11 +67,11 @@ bool Sponsor ::modifier()
                         QString matri_string=QString ::number (matri);
                         QString montant_string = QString::number(montant);
     query.prepare("UPDATE sponsor SET matri=:matri,nom=:nom,ad=:ad,email=:email,montant=:montant,duree=:duree WHERE matri=:matri ");
-                                          query.bindValue(":matri",matri_string);
-                                          query.bindValue(":nom", nom);
-                                          query.bindValue(":ad", ad);
-                                             query.bindValue(":email", email);
-                                             query.bindValue(":montant", montant);
-                                              query.bindValue(":duree", duree);
+                         query.bindValue(":matri",matri_string);
+                         query.bindValue(":nom", nom);
+                         query.bindValue(":ad", ad);
+                         query.bindValue(":email", email);
+                         query.bindValue(":montant", montant);
+                         query.bindValue(":duree", duree);
 
                      return query.exec();}

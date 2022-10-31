@@ -47,6 +47,8 @@ bool test=S.ajouter();
                              "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
+
+
 void MainWindow::on_pb_supp_clicked()
 {
     int matri=ui->le_matrisupp->text().toInt();
@@ -65,6 +67,7 @@ void MainWindow::on_pb_supp_clicked()
                                      "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
+
 
 
 void MainWindow::on_pb_modif_clicked()
